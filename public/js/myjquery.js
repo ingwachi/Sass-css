@@ -24,7 +24,8 @@ $(document).ready(function () {
 
     setTimeout(function() {
         $.ajax({
-            url: 'data.json'
+            url: 'data.json',
+            dataType: 'json'
         }).done(function (res) {
             // console.log(res)
             for (obj of res) {
